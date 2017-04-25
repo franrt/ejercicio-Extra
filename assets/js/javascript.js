@@ -1,8 +1,14 @@
-var fahrenheit = [32, 47, 89, -25, 13];
-var celcius = [];
+function convertirCelcius() {
+    var fTempVal = parseInt(document.getElementById('fTemp').value);
+    var cTempVal = (fTempVal - 32) * (5 / 9);
+    document.getElementById('cTemp').value = cTempVal;
+    return false;
+}
 
-fahrenheit.map(function convertirTemp(valor) {
-    return celcius.push((valor - 32) * (5 / 9).toFixed(2));
-});
-
-document.write(celcius);
+function convertirFarenheit() {
+    var cTempVal = parseInt(document.getElementById('cTemp').value);
+    var fTempVal = (cTempVal * (9 / 5)) + 32;
+    console.log(fTempVal);
+    document.getElementById('fTemp').value = fTempVal;
+    return false;
+}

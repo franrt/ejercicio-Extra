@@ -2,14 +2,43 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>Convertidor de temperatura</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-
+    <div align="center">
+        <header>
+            <h1>Convertidor de Temperatura</h1>
+        </header>
+        <form name="convertidor">
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Fahrenheit</td>
+                        <td>
+                            <input name="fTemp" id="fTemp" type="text" />
+                        </td>
+                        <td>
+                            <button type="button" onclick="convertirCelcius();return false">Convertir a Celsius</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Celsius</td>
+                        <td>
+                            <input name="cTemp" id="cTemp" type="text" />
+                        </td>
+                        <td>
+                            <button type="button" onclick="convertirFarenheit();return false">Convertir a Fahrenheit</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <script src="assets/js/javascript.js"></script>
 </body>
 
 </html>
